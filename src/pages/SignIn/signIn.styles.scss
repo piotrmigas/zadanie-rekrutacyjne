@@ -1,0 +1,72 @@
+@import "../../variables";
+
+.box {
+  margin: 141px auto 263px auto;
+  background: $boxBg;
+  border-radius: 8px;
+  width: 893px;
+  height: 1045px;
+  text-align: center;
+  box-shadow: $boxShadow;
+
+  h1 {
+    color: $orange;
+    font-weight: bold;
+    font-size: 64px;
+    padding-top: 70px;
+    margin-bottom: 187px;
+    line-height: 75px;
+  }
+
+  form {
+    .field {
+      margin-bottom: 36px;
+      position: relative;
+
+      input {
+        width: 600px;
+        height: 50px;
+      }
+
+      // error msg
+
+      div {
+        position: absolute;
+        left: 17%;
+        &::before {
+          display: inline;
+          content: "⚠ ";
+        }
+      }
+    }
+
+    // login btn
+
+    button {
+      margin-top: 28px;
+      color: $white;
+      background: $orange;
+      width: 315px;
+      height: 89px;
+      font-weight: 500;
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+  p {
+    margin: 64px 0;
+    color: $white;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  a {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: $orange;
+    text-decoration: none;
+  }
+}

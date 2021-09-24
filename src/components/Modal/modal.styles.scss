@@ -1,0 +1,95 @@
+@import "../../variables";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.modal {
+  position: fixed;
+  width: 1162px;
+  height: 1312px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $boxBg;
+  padding: 36px;
+
+  input[type="text"] {
+    width: 1088px;
+    height: 50px;
+    margin-bottom: 61px;
+  }
+
+  .line {
+    border: 4px solid $orange;
+    margin-bottom: 49px;
+    background: $orange;
+    box-shadow: $boxShadow;
+  }
+
+  // checkbox
+
+  .custom-checkbox input {
+    display: none;
+  }
+
+  .custom-checkbox span {
+    border: 2px solid $black;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+  }
+
+  .custom-checkbox input:checked + span {
+    border: 2px solid $green;
+  }
+
+  .custom-checkbox input:checked + span:before {
+    content: "✔";
+    font-size: 34px;
+    color: $green;
+    position: absolute;
+    top: -15px;
+    right: -5px;
+  }
+
+  // box buutons
+
+  .box-btns {
+    position: absolute;
+    bottom: 26px;
+    left: 38px;
+    right: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    :first-child {
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 56px;
+      color: $orange;
+    }
+
+    .action-btn {
+      font-size: 36px;
+      font-weight: 500;
+      width: 239px;
+      height: 78px;
+      line-height: 42px;
+    }
+  }
+}

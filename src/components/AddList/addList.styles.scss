@@ -1,0 +1,40 @@
+@import "../../variables";
+
+.add-task {
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    input[type="text"] {
+      background: transparent;
+      border-bottom: 1px solid $orange;
+      border-radius: 0;
+      width: 1043px;
+      margin-bottom: 16px;
+      &::placeholder {
+        color: $grey;
+      }
+    }
+  }
+
+  // action buttons
+
+  .btns {
+    display: flex;
+    margin-bottom: 904px;
+    justify-content: flex-end;
+
+    button {
+      width: 128px;
+      height: 44px;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    .action-btn {
+      margin-left: 84px;
+    }
+  }
+}

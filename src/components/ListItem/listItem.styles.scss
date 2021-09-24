@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.list-item {
+  font-size: 24px;
+  height: 100px;
+  margin: 36px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+  border-radius: 8px;
+  background: $boxBg;
+  color: $white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover i {
+    opacity: 1;
+  }
+}
+
+.fas.fa-times {
+  color: $red;
+  opacity: 0;
+  margin-left: 5px;
+}

@@ -1,0 +1,14 @@
+.lists {
+  margin-top: 77px;
+  img {
+    cursor: pointer;
+    position: fixed;
+    width: 104px;
+    bottom: 65px;
+    right: 90px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap");
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: $bg;
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1175px;
+}
+
+button {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.action-btn {
+  color: $white;
+  border: 1px solid $orange;
+  background: $orange;
+  box-shadow: $boxShadow;
+  &:hover {
+    background: $white;
+    color: $orange;
+    border-color: $orange;
+  }
+}
+
+.cancel-btn {
+  color: $white;
+  border: 1px solid $orangeRed;
+  background: $orangeRed;
+  box-shadow: $boxShadow;
+  &:hover {
+    background: $white;
+    color: $orangeRed;
+    border-color: $orangeRed;
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+  padding: 11px 18px;
+  &::placeholder {
+    color: $darkGrey;
+  }
+}
+
+.error-msg {
+  color: $red;
+}

@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading {
+  color: $white;
+  text-align: center;
+}

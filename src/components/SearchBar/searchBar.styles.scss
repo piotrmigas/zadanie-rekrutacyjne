@@ -1,0 +1,14 @@
+@import "../../variables";
+
+#search-bar {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  width: 482px;
+  height: 50px;
+  &::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $black;
+    opacity: 1; /* Firefox */
+  }
+}
